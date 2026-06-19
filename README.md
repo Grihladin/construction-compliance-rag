@@ -1,6 +1,8 @@
-# Building Code RAG Platform
+# Construction Compliance RAG Platform
 
-This repository implements the **Document Intelligence & Compliance System** and the **Conversational AI Interface & Knowledge Assistant** for a construction-focused AI platform.
+This repository implements a **Document Intelligence & Compliance System** and a **Conversational AI Knowledge Assistant** for construction regulations.
+
+Originally developed as an internship test task, the project parses construction regulation documents, indexes them for semantic search, and provides grounded answers with citations through a RAG-based chat interface.
 
 - Parses the 2021 International Building Code (IBC) into structured JSON (chapters, sections, tables, figures).
 - Stores the normalized content in a **Postgres + pgvector** database.

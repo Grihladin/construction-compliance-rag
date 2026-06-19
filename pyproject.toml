@@ -1,7 +1,7 @@
 [project]
-name = "parsing"
+name = "construction-compliance-rag"
 version = "0.1.0"
-description = "Add your description here"
+description = "A document intelligence and RAG platform for construction compliance."
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
