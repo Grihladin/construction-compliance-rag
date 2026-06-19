@@ -11,8 +11,6 @@ Originally developed as an internship test task, the project parses construction
 
 This module acts as the **building code knowledge backbone** that other components (e.g., drawing/blueprint analysis, risk assessment engine) can query for regulatory constraints and explanations.
 
----
-
 ## Table of Contents
 - [Quick Start](#quick-start)
   - [Prerequisites](#prerequisites)
@@ -30,8 +28,6 @@ This module acts as the **building code knowledge backbone** that other componen
   - [Chat UI (LibreChat)](#chat-ui-librechat)
     - [LibreChat Integration](#librechat-integration)
 - [LangGraph Workflow Overview](#langgraph-workflow-overview)
-
----
 
 ## Quick Start
 
@@ -61,8 +57,6 @@ This module acts as the **building code knowledge backbone** that other componen
    git submodule update --init --recursive
    ```
 
----
-
 ### Docker Compose
 
 The Compose file launches:
@@ -88,8 +82,6 @@ When the stack is running:
 - LibreChat UI: http://localhost:3080
 - Static PDF (for citations): http://localhost:8000/static/2021_International_Building_Code.pdf
 
----
-
 ### Parse the PDF
 
    ```bash
@@ -110,13 +102,10 @@ When the stack is running:
 
    This writes sections, tables, figures, and embeddings to Postgres.
 
----
-
 ## Architecture Overview
 
 ### System Architecture Diagram
 ![System Architecture](diagrams/System_Architecture.svg)
-
 
 ### Parsing Pipeline
 
@@ -214,9 +203,6 @@ Responses produced by `/query` and `/v1/chat/completions` include Markdown-forma
   - `dropParams` removing unsupported OpenAI parameters
 - Update `librechat.config.yaml` to expose additional models or features if needed.
 - When auth is enabled, LibreChat sends `Authorization: Bearer <LIBRECHAT_RAG_API_KEY>` and the FastAPI app verifies it against `RAG_API_KEY`.
-
-
----
 
 ## LangGraph Workflow Overview
 ![LangGraph workflow](diagrams/LangGraph.svg)
